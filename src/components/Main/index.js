@@ -16,15 +16,34 @@ const Main = () => {
           <img src={magnifier} className="main__icon" alt="magnifier" />
           <input
             type="text"
+            value={inputState}
             className="main__input"
             onChange={(e) => setInputState(e.target.value)}
           ></input>
-          {inputState && <img src={cross} className="main__icon" alt="cross" />}
+          <img
+            src={cross}
+            className={inputState ? "main__icon" : "main__icon--hidden"}
+            alt="cross"
+            onClick={() => setInputState("")}
+          />
         </div>
         <div>
-          <Button text="Google Search" />
-          <Button text="I'm feeling lucky" />
+          <Button
+            text="Google Search"
+            href={
+              inputState &&
+              `https://google.com/search?q=${inputState.split(" ").join("+")}`
+            }
+            disabled={!inputState && true}
+          />
+          <Button
+            text="I'm feeling lucky"
+            href="https://www.google.com/doodles"
+          />
         </div>
+        <p className="main__">
+          Google offered in: <a href="https://www.google.pl">polski</a>
+        </p>
       </div>
     </main>
   );

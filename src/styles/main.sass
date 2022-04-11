@@ -12,25 +12,34 @@
 
     &__logo
         max-width: 272px
+        margin-bottom: 2.25rem
+
+    &__icon-wrapper
+        color: red
 
     &__icon
         width: 1.25rem
-        height: 1.25rem
-
-        padding: 0
+        height: 1.25rems
+        padding: 0 0.875rem
         border: none
+
+        &--hidden
+            @extend .main__icon
+            visibility: hidden
 
     &__query-wrapper
         max-width: 584px
-        // padding: 5px 8px 0 14px
         height: 2.75rem
         border: 1px solid #dfe1e5
         border-radius: 1.5rem
         display: flex
         align-items: center
+        margin-bottom: 1.875rem
 
-        &:active
-            border: none
+        &:hover, &:active
+            box-shadow: rgba(32,33,36,0.28) 0 1px 6px 0
+            border-color: rgba(223,225,229,0)
 
-    &__button
-        background-color: red
+    &__input
+        outline: none
+        border: none

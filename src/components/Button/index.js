@@ -1,10 +1,16 @@
 import React from "react";
 import "../../styles/button.sass";
 
-const Button = ({ text, onSubmit }) => {
+const Button = ({ text, href, disabled }) => {
   return (
-    <button type="submit" onSubmit={onSubmit} className="main__button">
-      {text}
+    <button className="main__button">
+      {disabled ? (
+        <a role="link" aria-disabled="true">
+          {text}
+        </a>
+      ) : (
+        <a href={href}>{text}</a>
+      )}
     </button>
   );
 };
