@@ -12,7 +12,6 @@ const Main = () => {
         <img src={logo} className="main__logo" alt="logo" />
         <QuerySection inputState={inputState} setInputState={setInputState} />
         <ButtonSection query={inputState} />
-
         <p className="main__">
           Google offered in: <a href="https://www.google.pl">polski</a>
         </p>

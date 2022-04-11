@@ -14,7 +14,9 @@ const QuerySection = ({ inputState, setInputState }) => {
       ></input>
       <img
         src={cross}
-        className={inputState ? "main__icon" : "main__icon--hidden"}
+        className={
+          inputState ? "main__icon--cursor-pointer" : "main__icon--hidden"
+        }
         alt="cross"
         onClick={() => setInputState("")}
       />
