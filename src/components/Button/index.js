@@ -5,11 +5,13 @@ const Button = ({ text, href, disabled }) => {
   return (
     <button className="main__button">
       {disabled ? (
-        <a role="link" aria-disabled="true">
+        <a className="main__button-link" role="link" aria-disabled="true">
           {text}
         </a>
       ) : (
-        <a href={href}>{text}</a>
+        <a className="main__button-link" href={href}>
+          {text}
+        </a>
       )}
     </button>
   );

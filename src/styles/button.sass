@@ -6,14 +6,13 @@
     box-shadow: none
     color: #3c4043
     border: 1px solid #f8f9fa
-
-    // &--disabled
-    //     @extend .main__button
-    //     pointer-events: none
+    cursor: pointer
 
     &:hover
         border: 1px solid #dadce0
         box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
 
-    &:active, &:visited
-        color: #3c4043
+    &-link
+        &:active, &:visited
+        color: initial
+        text-decoration: none
