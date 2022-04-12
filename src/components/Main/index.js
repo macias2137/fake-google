@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/main.sass";
 import logo from "../../assets/logo.svg";
+import products from "../../assets/products.svg";
 import QuerySection from "../QuerySection";
 import ButtonSection from "../ButtonSection";
 
@@ -10,6 +11,8 @@ const Main = () => {
     <main className="main">
       <div className="main__wrapper">
         <img src={logo} className="main__logo" alt="logo" />
+        <img src={products} className="main__logo" alt="logo" />
+
         <QuerySection inputState={inputState} setInputState={setInputState} />
         <ButtonSection query={inputState} />
         <p className="main__">

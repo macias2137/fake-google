@@ -1,0 +1,27 @@
+@use "../styles/icon.sass"
+
+.query-section
+    max-width: 584px
+    height: 2.75rem
+    border: 1px solid #dfe1e5
+    border-radius: 1.5rem
+    display: flex
+    align-items: center
+    margin-bottom: 1.875rem
+
+    &:hover, &:active
+    box-shadow: rgba(32,33,36,0.28) 0 1px 6px 0
+    border-color: rgba(223,225,229,0)
+
+    &__input
+        outline: none
+        border: none
+
+    &__icon
+    @extend .icon
+
+    &__icon--hidden
+        @extend .icon--hidden
+
+    &__cursor-pointer
+        @extend .icon--cursor-pointer

@@ -9,11 +9,19 @@ const Footer = () => {
         <p>Polska</p>
       </div>
       <div className="footer__bottom">
-        <div className="footer__bottom-menu">
+        <div className="footer__bottom-menu--left">
           <a className="footer__bottom-menu-link">O nas</a>
           <a className="footer__bottom-menu-link">Reklamuj się</a>
           <a className="footer__bottom-menu-link">Dla firm</a>
           <a className="footer__bottom-menu-link">Jak działa wyszukiwarka</a>
+        </div>
+        <div className="footer__bottom-menu-text">
+          <p>Neutralność węglowa od 2007 roku</p>
+        </div>
+        <div className="footer__bottom-menu--right">
+          <a className="footer__bottom-menu-link">Prywatność</a>
+          <a className="footer__bottom-menu-link">Warunki</a>
+          <a className="footer__bottom-menu-link">Ustawienia</a>
         </div>
       </div>
     </footer>
