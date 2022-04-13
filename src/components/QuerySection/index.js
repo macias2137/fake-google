@@ -1,6 +1,7 @@
 import React from "react";
 import magnifier from "../../assets/magnifier.svg";
 import cross from "../../assets/cross.svg";
+import "../../styles/main.sass";
 
 const QuerySection = ({ inputState, setInputState }) => {
   return (
